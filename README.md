@@ -75,7 +75,7 @@ namespace Example
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.ApiKeyPrefix.Add("key", "Bearer");
 
-            var apiInstance = new DefaultApi();
+            var apiInstance = new HLRApi();
             var key = key_example;  // string | API Key as generated from the <a href='https://www.smsfusion.com.au/admin/api/'>admin panel</a>
             var num = num_example;  // string | A single phone number or <a href='https://www.smsfusion.com.au/help/msisdn/'>MSDISDN</a>
             var cc = cc_example;  // string | 2 character country code <a href='https://en.wikipedia.org/wiki/ISO_3166-2'>ISO 3166-2</a> for formatting local numbers internationally (optional) 
@@ -88,7 +88,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling DefaultApi.GetHLR: " + e.Message );
+                Debug.Print("Exception when calling HLRApi.GetHLR: " + e.Message );
             }
         }
     }
@@ -98,12 +98,13 @@ namespace Example
 <a name="documentation-for-api-endpoints"></a>
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://api.smsfusion.com.au/*
+All URIs are relative to *https://api.smsfusion.com.au/*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**GetHLR**](docs/DefaultApi.md#gethlr) | **GET** /hlr/ | HLR number lookup
-*DefaultApi* | [**GetHLRCallback**](docs/DefaultApi.md#gethlrcallback) | **GET** /hlr-callback/ | HLR number lookup with results going to a callback URL
+*HLRApi* | [**GetHLR**](docs/HLRApi.md#gethlr) | **GET** /hlr/ | HLR number lookup
+*HLRApi* | [**GetHLRCallback**](docs/HLRApi.md#gethlrcallback) | **GET** /hlr-callback/ | HLR number lookup with results going to a callback URL
+*SMSApi* | [**SendSMS**](docs/SMSApi.md#sendsms) | **GET** /sms/ | Send an SMS
 
 
 <a name="documentation-for-models"></a>
@@ -113,6 +114,7 @@ Class | Method | HTTP request | Description
  - [Model.HLRError](docs/HLRError.md)
  - [Model.HLRResult](docs/HLRResult.md)
  - [Model.OutOfCredit](docs/OutOfCredit.md)
+ - [Model.SMSResult](docs/SMSResult.md)
 
 
 <a name="documentation-for-authorization"></a>

@@ -11,7 +11,7 @@ Contact: support@smsfusion.com.au
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EE7B7DA9-9B11-4477-9B5B-5E68DE09F69D}</ProjectGuid>
+    <ProjectGuid>{9AFCCC7E-42E8-4923-90BF-7BF26BE12054}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IO.Swagger</RootNamespace>

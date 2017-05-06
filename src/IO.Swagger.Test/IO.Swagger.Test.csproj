@@ -74,7 +74,7 @@ Contact: support@smsfusion.com.au
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\IO.Swagger\IO.Swagger.csproj">
-          <Project>{EE7B7DA9-9B11-4477-9B5B-5E68DE09F69D}</Project>
+          <Project>{9AFCCC7E-42E8-4923-90BF-7BF26BE12054}</Project>
           <Name>IO.Swagger</Name>
       </ProjectReference>
   </ItemGroup>

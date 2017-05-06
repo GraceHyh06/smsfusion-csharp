@@ -48,17 +48,17 @@ namespace IO.Swagger.Client
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default configuration and base path (http://api.smsfusion.com.au/).
+        /// with default configuration and base path (https://api.smsfusion.com.au/).
         /// </summary>
         public ApiClient()
         {
             Configuration = Configuration.Default;
-            RestClient = new RestClient("http://api.smsfusion.com.au/");
+            RestClient = new RestClient("https://api.smsfusion.com.au/");
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default base path (http://api.smsfusion.com.au/).
+        /// with default base path (https://api.smsfusion.com.au/).
         /// </summary>
         /// <param name="config">An instance of Configuration.</param>
         public ApiClient(Configuration config = null)
@@ -68,7 +68,7 @@ namespace IO.Swagger.Client
             else
                 Configuration = config;
 
-            RestClient = new RestClient("http://api.smsfusion.com.au/");
+            RestClient = new RestClient("https://api.smsfusion.com.au/");
         }
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace IO.Swagger.Client
         /// with default configuration.
         /// </summary>
         /// <param name="basePath">The base path.</param>
-        public ApiClient(String basePath = "http://api.smsfusion.com.au/")
+        public ApiClient(String basePath = "https://api.smsfusion.com.au/")
         {
            if (String.IsNullOrEmpty(basePath))
                 throw new ArgumentException("basePath cannot be empty");
